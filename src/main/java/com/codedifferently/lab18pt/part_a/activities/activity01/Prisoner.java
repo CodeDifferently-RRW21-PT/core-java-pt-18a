@@ -5,12 +5,13 @@ public class Prisoner {
     public String name;
     public double height;
     public int sentence;
-
+    public Cell cell;
     //Constructor
-    public Prisoner(String name, double height, int sentence){
+    public Prisoner(String name, double height, int sentence, Cell cell){
         this.name = name;
         this.height = height;
         this.sentence = sentence;
+        this.cell = cell;
     }
 
 
@@ -23,5 +24,6 @@ public class Prisoner {
         System.out.println("Name: " +name);
         System.out.println("Height: " +height);
         System.out.println("Sentence: " +sentence);
+        System.out.println("Cell name: "+cell.name  );
     }
 }
